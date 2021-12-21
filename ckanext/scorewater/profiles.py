@@ -74,7 +74,7 @@ class DcatApSeTwoZeroZero(RDFProfile):
             ('title', DCT.title, None, Literal),
             ('notes', DCT.description, None, Literal),
             ('url', DCAT.landingPage, None, URIRef),
-            ('creator', DCT.creator, None, Literal),
+            ('creator', DCT.creator, None, URIRef),
             ('attribution', PROV.qualifiedAttribution, None, Literal),
             ('identifier', DCT.identifier, ['guid', 'id'], Literal),
             ('alternate_id', ADMS.identifier, None, Literal),
@@ -158,12 +158,12 @@ class DcatApSeTwoZeroZero(RDFProfile):
             self.g.add((telephone_ref, VCARD.hasValue, URIRef(self._add_tel(telephone))))
 
             # Assign address only to Locality property
-            has_address_ref = BNode()
-            address_ref = BNode()
-            address = self._get_dataset_value(dataset_dict, 'contact_point_address')
-            self.g.add((contact_details, VCARD.hasAddress, has_address_ref))
-            self.g.add((has_address_ref, VCARD.Address, address_ref))
-            self.g.add((address_ref, VCARD.Locality, Literal(address)))
+            # has_address_ref = BNode()
+            # address_ref = BNode()
+            # address = self._get_dataset_value(dataset_dict, 'contact_point_address')
+            # self.g.add((contact_details, VCARD.hasAddress, has_address_ref))
+            # self.g.add((has_address_ref, VCARD.Address, address_ref))
+            # self.g.add((address_ref, VCARD.Locality, Literal(address)))
 
         # Publisher
         if any([

@@ -130,7 +130,7 @@
       {
          "field_name":"creator",
          "help_inline":true,
-         "display_snippet":"text.html",
+         "display_snippet":"link.html",
          "required":false,
          "form_snippet":"text.html",
          "label":{
@@ -141,6 +141,7 @@
             "en":"This property refers to the entity (organisation) primarily responsible for producing the dataset.",
             "sv":"Egenskapen hänvisar till en enhet (organisation) som är huvudansvarig för att producera datamängden."
          },
+         "validators":"ignore_missing url_checker",
          "typename": "dcterms:creator"
       },
       {
@@ -1207,8 +1208,26 @@
             "sv":"Denna egenskap förbinder en datamängd med en av dess distributioner."
          },
          "typename": "dcat:distribution"
-      }
-   ],
+      },
+     {
+      "field_name": "bounding_box",
+      "harmonized_field_name": "bounding_box",
+      "display_snippet": "text.html",
+      "form_snippet": "text.html",
+      "help_inline": true,
+      "help_text": {
+        "en": "Bounding Box [NGR]",
+        "nl": "Omgrenzende rechthoek [NGR]",
+        "sv": "TBD"
+      },
+      "label": {
+        "en": "Bounding box",
+        "nl": "Omgrenzende rechthoek",
+        "sv": "Bounding box"
+      },
+      "required": false
+    }
+  ],
   "resource_fields":[
       {
          "field_name":"name",
