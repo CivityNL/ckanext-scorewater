@@ -1,0 +1,7 @@
+{% ckan_extends %}
+
+{% block page_primary_action %}
+  {% if h.check_access('package_create') %}
+    {% snippet 'snippets/package_create_button.html', package_types=h.scheming_package_type_list() %}
+  {% endif %}
+{% endblock %}

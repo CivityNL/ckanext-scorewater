@@ -1,0 +1,28 @@
+{
+  "scheming_version": 1,
+  "organization_type": "organization",
+  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "fields": [
+    {
+      "field_name": "organization_email",
+      "label": "Email",
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "output_validators": "ignore_missing"
+    },
+    {
+      "field_name": "organization_telephone",
+      "label": {"en":"Telephone","nl":"Telefon"},
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "output_validators": "ignore_missing"
+    },
+    {
+      "field_name": "organization_address",
+      "label": {"en":"Address","nl":"Adress"},
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "output_validators": "ignore_missing"
+    }
+  ]
+}

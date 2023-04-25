@@ -1,0 +1,1445 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "all",
+  "about": "Dataset",
+  "about_url": "dataset",
+  "dataset_fields": [
+    {
+      "field_name": "language",
+      "harmonized_field_name": "language",
+      "harmonized_value_mapping": {
+        "http://publications.europa.eu/resource/authority/language/ENG": "http://publications.europa.eu/resource/authority/language/ENG",
+        "http://publications.europa.eu/resource/authority/language/FRY": "http://publications.europa.eu/resource/authority/language/FRY",
+        "http://publications.europa.eu/resource/authority/language/NLD": "http://publications.europa.eu/resource/authority/language/NLD",
+        "English": "http://publications.europa.eu/resource/authority/language/ENG",
+        "EN": "http://publications.europa.eu/resource/authority/language/ENG",
+        "Frisian": "http://publications.europa.eu/resource/authority/language/FRY",
+        "Dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "Nederland": "http://publications.europa.eu/resource/authority/language/NLD",
+        "nederlands": "http://publications.europa.eu/resource/authority/language/NLD",
+        "NL": "http://publications.europa.eu/resource/authority/language/NLD"
+      },
+      "harmonized_default_value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "help_inline": true,
+      "help_text": {
+        "en": "Language of the data. [DCAT mandatory]",
+        "nl": "Taal van de data. [DCAT verplicht]",
+        "sv": "Språk för data."
+      },
+      "label": {
+        "en": "Language",
+        "nl": "Taal",
+        "sv": "Språk"
+      },
+      "preset": "select",
+      "choices_helper": "civity_donl_language_list_choices",
+      "default_value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "required": true,
+      "group": "language_theme"
+    },
+    {
+      "field_name": "metadata_language",
+      "harmonized_field_name": "metadata_language",
+      "harmonized_value_mapping": {
+        "http://publications.europa.eu/resource/authority/language/ENG": "http://publications.europa.eu/resource/authority/language/ENG",
+        "http://publications.europa.eu/resource/authority/language/FRY": "http://publications.europa.eu/resource/authority/language/FRY",
+        "http://publications.europa.eu/resource/authority/language/NLD": "http://publications.europa.eu/resource/authority/language/NLD",
+        "English": "http://publications.europa.eu/resource/authority/language/ENG",
+        "EN": "http://publications.europa.eu/resource/authority/language/ENG",
+        "Frisian": "http://publications.europa.eu/resource/authority/language/FRY",
+        "Dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "Nederland": "http://publications.europa.eu/resource/authority/language/NLD",
+        "nederlands": "http://publications.europa.eu/resource/authority/language/NLD",
+        "NL": "http://publications.europa.eu/resource/authority/language/NLD"
+      },
+      "harmonized_default_value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "The language used in the metadata of the dataset [DCAT mandatory]",
+        "nl": "De taal van de metadata [DCAT verplicht]",
+        "sv": "Metadata Språk"
+      },
+      "label": {
+        "en": "Metadata language",
+        "nl": "Taal van de metadata",
+        "sv": "Metadata Språk"
+      },
+      "preset": "select",
+      "choices_helper": "civity_donl_language_list_choices",
+      "default_value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "required": true,
+      "group": "language_theme"
+    },
+    {
+      "field_name": "theme",
+      "harmonized_field_name": "theme",
+      "harmonized_value_mapping": {
+        "http://standaarden.overheid.nl/owms/terms/Openbare_orde_en_veiligheid": "http://standaarden.overheid.nl/owms/terms/Openbare_orde_en_veiligheid",
+        "http://standaarden.overheid.nl/owms/terms/Recht_(thema)": "http://standaarden.overheid.nl/owms/terms/Recht_(thema)",
+        "http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur": "http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur",
+        "http://standaarden.overheid.nl/owms/terms/Sociale_zekerheid": "http://standaarden.overheid.nl/owms/terms/Sociale_zekerheid",
+        "http://standaarden.overheid.nl/owms/terms/Migratie_en_integratie": "http://standaarden.overheid.nl/owms/terms/Migratie_en_integratie",
+        "http://standaarden.overheid.nl/owms/terms/Financien": "http://standaarden.overheid.nl/owms/terms/Financien",
+        "http://standaarden.overheid.nl/owms/terms/Natuur_en_milieu": "http://standaarden.overheid.nl/owms/terms/Natuur_en_milieu",
+        "http://standaarden.overheid.nl/owms/terms/Onderwijs_en_wetenschap": "http://standaarden.overheid.nl/owms/terms/Onderwijs_en_wetenschap",
+        "http://standaarden.overheid.nl/owms/terms/Cultuur_en_recreatie": "http://standaarden.overheid.nl/owms/terms/Cultuur_en_recreatie",
+        "http://standaarden.overheid.nl/owms/terms/Zorg_en_gezondheid": "http://standaarden.overheid.nl/owms/terms/Zorg_en_gezondheid",
+        "http://standaarden.overheid.nl/owms/terms/Landbouw_(thema)": "http://standaarden.overheid.nl/owms/terms/Landbouw_(thema)",
+        "http://standaarden.overheid.nl/owms/terms/Economie": "http://standaarden.overheid.nl/owms/terms/Economie",
+        "http://standaarden.overheid.nl/owms/terms/Werk_(thema)": "http://standaarden.overheid.nl/owms/terms/Werk_(thema)",
+        "http://standaarden.overheid.nl/owms/terms/Bestuur": "http://standaarden.overheid.nl/owms/terms/Bestuur",
+        "http://standaarden.overheid.nl/owms/terms/Verkeer_(thema)": "http://standaarden.overheid.nl/owms/terms/Verkeer_(thema)",
+        "http://standaarden.overheid.nl/owms/terms/Huisvesting_(thema)": "http://standaarden.overheid.nl/owms/terms/Huisvesting_(thema)",
+        "bestuur": "http://standaarden.overheid.nl/owms/terms/Bestuur",
+        "cultuur-en": "http://standaarden.overheid.nl/owms/terms/Cultuur_en_recreatie",
+        "economie": "http://standaarden.overheid.nl/owms/terms/Economie",
+        "financien": "http://standaarden.overheid.nl/owms/terms/Financien",
+        "huisvesting": "http://standaarden.overheid.nl/owms/terms/Huisvesting_(thema)",
+        "landbouw": "http://standaarden.overheid.nl/owms/terms/Landbouw_(thema)",
+        "migratie-en-integratie": "http://standaarden.overheid.nl/owms/terms/Migratie_en_integratie",
+        "natuur-en-milieu": "http://standaarden.overheid.nl/owms/terms/Natuur_en_milieu",
+        "onderwijs-en-wetenschap": "http://standaarden.overheid.nl/owms/terms/Onderwijs_en_wetenschap",
+        "openbare": "http://standaarden.overheid.nl/owms/terms/Openbare_orde_en_veiligheid",
+        "recht": "http://standaarden.overheid.nl/owms/terms/Recht_(thema)",
+        "ruimte-en-infrastructuur": "http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur",
+        "sociale-zekerheid": "http://standaarden.overheid.nl/owms/terms/Sociale_zekerheid",
+        "verkeer": "http://standaarden.overheid.nl/owms/terms/Verkeer_(thema)",
+        "werk": "http://standaarden.overheid.nl/owms/terms/Werk_(thema)",
+        "zorg-en-gezondheid": "http://standaarden.overheid.nl/owms/terms/Zorg_en_gezondheid",
+        "geen-thema": "geen-thema"
+      },
+	  "harmonized_default_value": "geen-thema",
+      "label": {
+        "en": "Theme",
+        "nl": "Thema",
+        "sv": "Kategori"
+      },
+      "preset": "select",
+      "choices_helper": "civity_donl_theme_list_choices",
+      "help_inline": true,
+      "help_text": {
+        "en": "One or more themes that describe the dataset [DCAT mandatory]",
+        "nl": "1 of meerdere thema's die de dataset omschrijven [DCAT verplicht]",
+        "sv": "En kategori för datamängden. En datamängd kan associeras med flera teman."
+      },
+      "required": true,
+      "group": "language_theme"
+    },
+    {
+      "field_name": "subtheme",
+      "harmonized_field_name": "subtheme",
+      "label": {
+        "en": "Subtheme",
+        "nl": "Subthema",
+        "sv": "Undertema"
+      },
+      "preset": "select_field_with_parent",
+      "parent_field": "theme",
+      "form_include_blank_choice": true,
+      "choices": [
+        {
+          "parent": "Geen Thema",
+          "value": "geen-subtheme",
+          "label": "Geen Subthema"
+        },
+        {
+          "parent": "Sociale zekerheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Gezin_en_kinderen",
+          "label": "Gezin en kinderen"
+        },
+        {
+          "parent": "Sociale zekerheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Nabestaanden",
+          "label": "Nabestaanden"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Lucht",
+          "label": "Lucht"
+        },
+        {
+          "parent": "Cultuur en recreatie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Recreatie_(thema)",
+          "label": "Recreatie"
+        },
+        {
+          "parent": "Landbouw",
+          "value": "http://standaarden.overheid.nl/owms/terms/Voedselkwaliteit",
+          "label": "Voedselkwaliteit"
+        },
+        {
+          "parent": "Internationaal",
+          "value": "http://standaarden.overheid.nl/owms/terms/Internationale_samenwerking_(thema)",
+          "label": "Internationale samenwerking"
+        },
+        {
+          "parent": "Ruimte en infrastructuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Netwerken",
+          "label": "Netwerken"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Bouwnijverheid",
+          "label": "Bouwnijverheid"
+        },
+        {
+          "parent": "Internationaal",
+          "value": "http://standaarden.overheid.nl/owms/terms/Defensie_(thema)",
+          "label": "Defensie"
+        },
+        {
+          "parent": "Internationaal",
+          "value": "http://standaarden.overheid.nl/owms/terms/Reizen",
+          "label": "Reizen"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Geneesmiddelen_en_medische_hulpmiddelen",
+          "label": "Geneesmiddelen en medische hulpmiddelen"
+        },
+        {
+          "parent": "Verkeer",
+          "value": "http://standaarden.overheid.nl/owms/terms/Water_(verkeer-thema)",
+          "label": "Water"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Gezondheidsrisico's",
+          "label": "Gezondheidsrisico's"
+        },
+        {
+          "parent": "Recht",
+          "value": "http://standaarden.overheid.nl/owms/terms/Burgerlijk_recht",
+          "label": "Burgerlijk recht"
+        },
+        {
+          "parent": "Verkeer",
+          "value": "http://standaarden.overheid.nl/owms/terms/Spoor",
+          "label": "Spoor"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Natuur-_en_landschapsbeheer",
+          "label": "Natuur- en landschapsbeheer"
+        },
+        {
+          "parent": "Internationaal",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ontwikkelingssamenwerking",
+          "label": "Ontwikkelingssamenwerking"
+        },
+        {
+          "parent": "Cultuur en recreatie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Media",
+          "label": "Media"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Industrie_(thema)",
+          "label": "Industrie"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Rijksoverheid",
+          "label": "Rijksoverheid"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Parlement",
+          "label": "Parlement"
+        },
+        {
+          "parent": "Financien",
+          "value": "http://standaarden.overheid.nl/owms/terms/Financieel_toezicht",
+          "label": "Financieel toezicht"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Gemeenten",
+          "label": "Gemeenten"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ondernemen",
+          "label": "Ondernemen"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Koninklijk_Huis_(thema)",
+          "label": "Koninklijk Huis"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ethiek",
+          "label": "Ethiek"
+        },
+        {
+          "parent": "Internationaal",
+          "value": "http://standaarden.overheid.nl/owms/terms/Militaire_missies",
+          "label": "Militaire missies"
+        },
+        {
+          "parent": "Sociale zekerheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ziekte_en_arbeidsongeschiktheid",
+          "label": "Ziekte en arbeidsongeschiktheid"
+        },
+        {
+          "parent": "Huisvesting",
+          "value": "http://standaarden.overheid.nl/owms/terms/Bouwen_en_verbouwen",
+          "label": "Bouwen en verbouwen"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Overige_economische_sectoren",
+          "label": "Overige economische sectoren"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Jongeren_(gezondheid-thema)",
+          "label": "Jongeren"
+        },
+        {
+          "parent": "Recht",
+          "value": "http://standaarden.overheid.nl/owms/terms/Rechtspraak",
+          "label": "Rechtspraak"
+        },
+        {
+          "parent": "Openbare orde en veiligheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Terrorisme_(thema)",
+          "label": "Terrorisme"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Bodem",
+          "label": "Bodem"
+        },
+        {
+          "parent": "Onderwijs en wetenschap",
+          "value": "http://standaarden.overheid.nl/owms/terms/Onderzoek_en_wetenschap",
+          "label": "Onderzoek en wetenschap"
+        },
+        {
+          "parent": "Verkeer",
+          "value": "http://standaarden.overheid.nl/owms/terms/Weg_(thema)",
+          "label": "Weg"
+        },
+        {
+          "parent": "Onderwijs en wetenschap",
+          "value": "http://standaarden.overheid.nl/owms/terms/Basisonderwijs_(thema)",
+          "label": "Basisonderwijs"
+        },
+        {
+          "parent": "Recht",
+          "value": "http://standaarden.overheid.nl/owms/terms/Bestuursrecht",
+          "label": "Bestuursrecht"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Waterschappen",
+          "label": "Waterschappen"
+        },
+        {
+          "parent": "Werk",
+          "value": "http://standaarden.overheid.nl/owms/terms/Levensloop",
+          "label": "Levensloop"
+        },
+        {
+          "parent": "Sociale zekerheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Jongeren_(thema)",
+          "label": "Jongeren"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ziekten_en_behandelingen",
+          "label": "Ziekten en behandelingen"
+        },
+        {
+          "parent": "Sociale zekerheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ouderen",
+          "label": "Ouderen"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Markttoezicht",
+          "label": "Markttoezicht"
+        },
+        {
+          "parent": "Openbare orde en veiligheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Rampen",
+          "label": "Rampen"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/ICT",
+          "label": "ICT"
+        },
+        {
+          "parent": "Migratie en integratie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Immigratie_(thema)",
+          "label": "Immigratie"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Transport_(thema)",
+          "label": "Transport"
+        },
+        {
+          "parent": "Internationaal",
+          "value": "http://standaarden.overheid.nl/owms/terms/Europese_zaken",
+          "label": "Europese zaken"
+        },
+        {
+          "parent": "Verkeer",
+          "value": "http://standaarden.overheid.nl/owms/terms/Luchtvaart",
+          "label": "Luchtvaart"
+        },
+        {
+          "parent": "Onderwijs en wetenschap",
+          "value": "http://standaarden.overheid.nl/owms/terms/Hoger_onderwijs_(thema)",
+          "label": "Hoger onderwijs"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Energie",
+          "label": "Energie"
+        },
+        {
+          "parent": "Recht",
+          "value": "http://standaarden.overheid.nl/owms/terms/Staatsrecht",
+          "label": "Staatsrecht"
+        },
+        {
+          "parent": "Ruimte en infrastructuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Waterkeringen_en_waterbeheer",
+          "label": "Waterkeringen en waterbeheer"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Voeding",
+          "label": "Voeding"
+        },
+        {
+          "parent": "Werk",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ontslag_(thema)",
+          "label": "Ontslag"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/De_Nederlandse_Antillen_en_Aruba",
+          "label": "De Nederlandse Antillen en Aruba"
+        },
+        {
+          "parent": "Cultuur en recreatie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Religie",
+          "label": "Religie"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Geluid_(thema)",
+          "label": "Geluid_(thema)"
+        },
+        {
+          "parent": "Onderwijs en wetenschap",
+          "value": "http://standaarden.overheid.nl/owms/terms/Voortgezet_onderwijs_(thema)",
+          "label": "Voortgezet onderwijs"
+        },
+        {
+          "parent": "Werk",
+          "value": "http://standaarden.overheid.nl/owms/terms/Arbeidsvoorwaarden",
+          "label": "Arbeidsvoorwaarden"
+        },
+        {
+          "parent": "Landbouw",
+          "value": "http://standaarden.overheid.nl/owms/terms/Dieren_(thema)",
+          "label": "Dieren"
+        },
+        {
+          "parent": "Recht",
+          "value": "http://standaarden.overheid.nl/owms/terms/Bezwaar_en_klachten",
+          "label": "Bezwaar en klachten"
+        },
+        {
+          "parent": "Financien",
+          "value": "http://standaarden.overheid.nl/owms/terms/Begroting",
+          "label": "Begroting"
+        },
+        {
+          "parent": "Financien",
+          "value": "http://standaarden.overheid.nl/owms/terms/Inkomensbeleid",
+          "label": "Inkomensbeleid"
+        },
+        {
+          "parent": "Financien",
+          "value": "http://standaarden.overheid.nl/owms/terms/Belasting",
+          "label": "Belasting"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Afval_(thema)",
+          "label": "Afval"
+        },
+        {
+          "parent": "Cultuur en recreatie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Sport_(thema)",
+          "label": "Sport"
+        },
+        {
+          "parent": "Werk",
+          "value": "http://standaarden.overheid.nl/owms/terms/Werkgelegenheid",
+          "label": "Werkgelegenheid"
+        },
+        {
+          "parent": "Onderwijs en wetenschap",
+          "value": "http://standaarden.overheid.nl/owms/terms/Beroepsonderwijs_(thema)",
+          "label": "Middelbaar beroepsonderwijs"
+        },
+        {
+          "parent": "Sociale zekerheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Werkloosheid",
+          "label": "Werkloosheid"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Organisatie_en_beleid",
+          "label": "Organisatie en beleid"
+        },
+        {
+          "parent": "Werk",
+          "value": "http://standaarden.overheid.nl/owms/terms/Arbeidsomstandigheden_(thema)",
+          "label": "Arbeidsomstandigheden"
+        },
+        {
+          "parent": "Landbouw",
+          "value": "http://standaarden.overheid.nl/owms/terms/Planten",
+          "label": "Planten"
+        },
+        {
+          "parent": "Openbare orde en veiligheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Staatsveiligheid",
+          "label": "Staatsveiligheid"
+        },
+        {
+          "parent": "Recht",
+          "value": "http://standaarden.overheid.nl/owms/terms/Strafrecht",
+          "label": "Strafrecht"
+        },
+        {
+          "parent": "Migratie en integratie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Nederlanderschap_(thema)",
+          "label": "Nederlanderschap"
+        },
+        {
+          "parent": "Migratie en integratie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Tijdelijk_verblijf",
+          "label": "Tijdelijk verblijf"
+        },
+        {
+          "parent": "Migratie en integratie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Integratie_(thema)",
+          "label": "Integratie"
+        },
+        {
+          "parent": "Openbare orde en veiligheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Politie_brandweer_en_hulpdiensten",
+          "label": "Politie, brandweer en hulpdiensten"
+        },
+        {
+          "parent": "Migratie en integratie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Emigratie_(thema)",
+          "label": "Emigratie"
+        },
+        {
+          "parent": "Cultuur en recreatie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Cultuur_(thema)",
+          "label": "Cultuur"
+        },
+        {
+          "parent": "Huisvesting",
+          "value": "http://standaarden.overheid.nl/owms/terms/Huren_en_verhuren",
+          "label": "Huren en verhuren"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Handel",
+          "label": "Handel"
+        },
+        {
+          "parent": "Economie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Toerisme",
+          "label": "Toerisme"
+        },
+        {
+          "parent": "Cultuur en recreatie",
+          "value": "http://standaarden.overheid.nl/owms/terms/Kunst_(thema)",
+          "label": "Kunst"
+        },
+        {
+          "parent": "Huisvesting",
+          "value": "http://standaarden.overheid.nl/owms/terms/Kopen_en_verkopen",
+          "label": "Kopen en verkopen"
+        },
+        {
+          "parent": "Natuur en milieu",
+          "value": "http://standaarden.overheid.nl/owms/terms/Stoffen",
+          "label": "Stoffen"
+        },
+        {
+          "parent": "Zorg en gezondheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Verzekeringen",
+          "label": "Verzekeringen"
+        },
+        {
+          "parent": "Openbare orde en veiligheid",
+          "value": "http://standaarden.overheid.nl/owms/terms/Criminaliteit",
+          "label": "Criminaliteit"
+        },
+        {
+          "parent": "Ruimte en infrastructuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening",
+          "label": "Ruimtelijke ordening"
+        },
+        {
+          "parent": "Bestuur",
+          "value": "http://standaarden.overheid.nl/owms/terms/Provincies",
+          "label": "Provincies"
+        },
+        {
+          "parent": "Onderwijs en wetenschap",
+          "value": "http://standaarden.overheid.nl/owms/terms/Overige_vormen_van_onderwijs",
+          "label": "Overige vormen van onderwijs"
+        }
+      ],
+      "required": false,
+      "help_text": {
+        "en": "Subtheme to which the data product relates to. [DCAT recommended]",
+        "nl": "Subthema waar het dataproduct betrekking op heeft. [DCAT aanbevolen]",
+        "sv": "Undertema som dataprodukten relaterar till."
+      },
+      "group": "language_theme"
+    },
+    {
+      "field_name": "publisher",
+      "harmonized_field_name": "publisher",
+      "preset": "select",
+      "choices_helper": "civity_donl_authority_list_choices",
+      "label": {
+        "en": "Publisher",
+        "nl": "Verstrekker / Publiceerder",
+        "sv": "Utgivare"
+      },
+      "form_attrs": {
+        "data-module": "autocomplete"
+      },
+      "help_inline": true,
+      "help_text": {
+        "en": "Entity responsible for maintenance and publication of the dataset  [DCAT mandatory]",
+        "nl": "Organisatie verantwoordelijk voor het beschikbaar stellen van de dataset [DCAT verplicht]",
+        "sv": "Egenskapen hänvisar till en enhet (organisation) som ansvarar för att göra datamängden tillgänglig."
+      },
+      "required": true,
+      "group": "contact"
+    },
+    {
+      "field_name": "authority",
+      "harmonized_field_name": "authority",
+      "preset": "select",
+      "choices_helper": "civity_donl_authority_list_choices",
+      "help_inline": true,
+      "help_text": {
+        "en": "Entity that is responsible for the contents of the dataset [DCAT mandatory]",
+        "nl": "Verantwoordelijke organisatie voor de dataset [DCAT verplicht]",
+        "sv": "Egenskapen hänvisar till en enhet (organisation) som är huvudansvarig för att producera datamängden."
+      },
+      "label": {
+        "en": "Authority / Data owner",
+        "nl": "Registratiehouder / Data-eigenaar",
+        "sv": "Dataägare"
+      },
+      "form_attrs": {
+        "data-module": "autocomplete"
+      },
+      "required": true,
+      "group": "contact"
+    },
+    {
+      "field_name": "contact_point_type",
+      "harmonized_field_name": "contact_point_type",
+      "help_inline": true,
+      "help_text": {
+        "en": "This property tells whether the contect point corresponds to an Individual or an Organisation. [DCAT optional]",
+        "nl": "Dit veld geeft aan of een contactpunt een persoon of organisatie is [DCAT optional]",
+        "sv": "Egenskapen anger om kontaktuppgiften motsvarar en individ eller organisation."
+      },
+      "label": {
+        "en": "Contact point type",
+        "nl": "Type contactpunt",
+        "sv": "Typ kontaktpunkt"
+      },
+      "preset": "select",
+      "choices": [
+        {
+          "value": "individual",
+          "label": {
+            "en": "Individual",
+            "nl": "Persoon",
+            "sv": "Individ"
+          }
+        },
+        {
+          "value": "organization",
+          "label": {
+            "en": "Organization",
+            "nl": "Organisatie",
+            "sv": "Organization"
+          }
+        }
+      ],
+      "default_value": false,
+      "required": false,
+      "group": "contact"
+    },
+    {
+      "field_name": "contact_point_name",
+      "harmonized_field_name": "contact_point_name",
+      "harmonized_default_value": "is_missing",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "Name of the contact point [DCAT mandatory]",
+        "nl": "Naam van contactpersoon [DCAT verplicht]",
+        "sv": "En text som motsvarar namnet på kontaktuppgiften."
+      },
+      "label": {
+        "en": "Contact point name",
+        "nl": "Naam contactpunt",
+        "sv": "Namn kontaktpunkt"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "required": true,
+      "group": "contact"
+    },
+    {
+      "field_name": "contact_point_email",
+      "harmonized_field_name": "contact_point_email",
+      "harmonized_default_value": "is_missing",
+      "form_placeholder": "johndoe@email.com",
+      "help_inline": true,
+      "help_text": {
+        "en": "Email of the contact point [DCAT recommended]",
+        "nl": "E-mailadres van contactpersoon [DCAT aanbevolen]",
+        "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
+      },
+      "label": {
+        "en": "Contact point email",
+        "nl": "E-mail contactpunt",
+        "sv": "E-postadress kontaktpunkt"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "email.html",
+      "required": true,
+      "unharmonized_default_value": "is_missing",
+      "group": "contact"
+    },
+    {
+      "field_name": "contact_point_phone",
+      "harmonized_field_name": "contact_point_phone",
+      "help_inline": true,
+      "help_text": {
+        "en": "Phonenumber of the contact point [DCAT recommended]",
+        "nl": "Telefoonnummer van contactpersoon [DCAT aanbevolen]",
+        "sv": "Ett telefonnummer ska ges inklusive landskod, t.ex. +4618100000. [DCAT rekommenderad]"
+      },
+      "label": {
+        "en": "Contact point phone",
+        "nl": "Telefoon contactpunt",
+        "sv": "Telefon kontaktpunkt"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "required": false
+    },
+    {
+      "field_name": "spatial_scheme",
+      "harmonized_field_name": "spatial_scheme",
+      "harmonized_value_mapping": {
+        "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.provincie": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.provincie",
+        "http://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992": "http://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992",
+        "http://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer": "http://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer",
+        "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap",
+        "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.koninkrijksdeel": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.koninkrijksdeel",
+        "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.gemeente": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.gemeente",
+        "Provincie": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.provincie",
+        "EPSG 28992": "http://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.epsg28992",
+        "PostcodeHuisnummer": "http://standaarden.overheid.nl/owms/4.0/doc/syntax-codeerschemas/overheid.postcodehuisnummer",
+        "Waterschap": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.waterschap",
+        "Koninkrijksdeel": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.koninkrijksdeel",
+        "Gemeente": "http://standaarden.overheid.nl/owms/4.0/doc/waardelijsten/overheid.gemeente"
+        },
+      "preset": "select",
+      "choices_helper": "civity_donl_spatial_scheme_list_choices",
+      "label": {
+        "en": "Spatial Scheme",
+        "nl": "Locatie",
+        "sv": "Namngivet geografiskt område"
+      },
+      "help_inline": true,
+      "help_text": {
+        "en": "The schemes of the spatial value [DCAT recommended]",
+        "nl": "Spatial schema [DCAT aanbevolen]",
+        "sv": "Det geografiska området som omfattas av datamängden. Det rekommenderas att använda Geonames URI:er i följande form: http://sws.geonames.org/6695072"
+      },
+      "required": false,
+      "group": "contact"
+    },
+    {
+      "field_name": "spatial_value",
+      "harmonized_field_name": "spatial_value",
+      "label": {
+        "en": "Geographical area",
+        "nl": "Geografisch gebied",
+        "sv": "Geografiskt område"
+      },
+      "preset": "select_field_with_parent",
+      "parent_field": "spatial_scheme",
+      "choices_helper": "civity_donl_spatial_value_list_choices",
+      "form_include_blank_choice": true,
+      "help_inline": true,
+      "help_text": {
+        "en": "Geographical locations based on the spatial_schemes provided [DCAT recommended]",
+        "nl": "Geografische locatie gebaseerd op spatial schema [DCAT aanbevolen]",
+        "sv": "Geografiskt område"
+      },
+      "required": false,
+      "group": "contact"
+    },
+    {
+      "field_name": "temporal_end",
+      "harmonized_field_name": "temporal_end",
+      "help_inline": true,
+      "help_text": {
+        "en": "A point in time, together with temporal_start it describes a period in time [DCAT recommended]",
+        "nl": "Einddatum van de dataset [DCAT aanbevolen]",
+        "sv": "Den tidsperiod som täcker datasetet."
+      },
+      "label": {
+        "en": "Temporal end",
+        "nl": "Einddatum",
+        "sv": "Slutdatum"
+      },
+      "preset": "date",
+      "required": false,
+      "group": "version"
+    },
+    {
+      "field_name": "access_rights",
+      "harmonized_field_name": "access_rights",
+      "harmonized_value_mapping": {
+        "http://publications.europa.eu/resource/authority/access-right/PUBLIC": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+        "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC",
+        "http://publications.europa.eu/resource/authority/access-right/RESTRICTED": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED",
+        "open": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+        "Public": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+        "Openbaar": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+        "Volledig Open": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+        "Beschikbaar": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+      "harmonized_default_value": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "The level of openness of the dataset [DCAT recommended]",
+        "nl": "Het openbaarheidsniveau van de dataset [DCAT aanbevolen]",
+        "sv": "Den här egenskapen hänvisar till information som indikerar huruvida datamängden/datatjänsten innehåller öppna data, har åtkomstrestriktioner eller inte är offentlig."
+      },
+      "label": {
+        "en": "Access rights",
+        "nl": "Toegangsrechten / Openbaarheid",
+        "sv": "Åtkomsträttigheter"
+      },
+      "preset": "select",
+      "choices": [
+        {
+          "label": {
+            "en": "Public",
+            "nl": "Publiek"
+          },
+          "value": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+        },
+        {
+          "label": {
+            "en": "Non Public",
+            "nl": "Niet Publiek"
+          },
+          "value": "http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC"
+        },
+        {
+          "label": {
+            "en": "Restricted",
+            "nl": "Beperkt"
+          },
+          "value": "http://publications.europa.eu/resource/authority/access-right/RESTRICTED"
+        }
+      ],
+      "sorted_choices": false,
+      "required": true,
+      "group": "version"
+    },
+    {
+      "field_name": "dataset_status",
+      "harmonized_field_name": "dataset_status",
+      "harmonized_value_mapping": {
+        "http://data.overheid.nl/status/gepland": "http://data.overheid.nl/status/gepland",
+        "http://data.overheid.nl/status/in_onderzoek": "http://data.overheid.nl/status/in_onderzoek",
+        "http://data.overheid.nl/status/niet_beschikbaar": "http://data.overheid.nl/status/niet_beschikbaar",
+        "http://data.overheid.nl/status/beschikbaar": "http://data.overheid.nl/status/beschikbaar",
+        "Gepland": "http://data.overheid.nl/status/gepland",
+        "In onderzoek": "http://data.overheid.nl/status/in_onderzoek",
+        "Niet beschikbaar": "http://data.overheid.nl/status/niet_beschikbaar",
+        "Beschikbaar": "http://data.overheid.nl/status/beschikbaar"
+      },
+      "help_inline": true,
+      "help_text": {
+        "en": "State of the dataset, it describes the availability of the dataset [DCAT recommended]",
+        "nl": "Status van de dataset [DCAT aanbevolen]",
+        "sv": "Datauppsättningens tillstånd, den beskriver datauppsättningens tillgänglighet"
+      },
+      "label": {
+        "en": "Status",
+        "nl": "Status",
+        "sv": "Status"
+      },
+      "preset": "select",
+      "choices": [
+        {
+          "label": {
+            "en": "Being researched",
+            "nl": "In onderzoek",
+            "sv": "Undersöks"
+          },
+          "value": "http://data.overheid.nl/status/in_onderzoek"
+        },
+        {
+          "label": {
+            "en": "Not available",
+            "nl": "Niet beschikbaar",
+            "sv": "Inte tillgänglig"
+          },
+          "value": "http://data.overheid.nl/status/niet_beschikbaar"
+        },
+        {
+          "label": {
+            "en": "Available",
+            "nl": "Beschikbaar",
+            "sv": "Tillgängliga"
+          },
+          "value": "http://data.overheid.nl/status/beschikbaar"
+        },
+        {
+          "label": {
+            "en": "Planned",
+            "nl": "Gepland",
+            "sv": "Planerad"
+          },
+          "value": "http://data.overheid.nl/status/gepland"
+        }
+      ],
+      "default_value": "http://data.overheid.nl/status/beschikbaar",
+      "required": false,
+      "group": "version"
+    },
+    {
+      "field_name": "issued",
+      "harmonized_field_name": "issued",
+      "help_inline": true,
+      "help_text": {
+        "en": "Date on which the dataset was published [DCAT recommended]",
+        "nl": "Datum waarop de dataset is gepubliceerd [DCAT aanbevolen]",
+        "sv": "Egenskapen anger datamängdens utgivningsdatum."
+      },
+      "label": {
+        "en": "Issued",
+        "nl": "Uitgiftedatum",
+        "sv": "Utgivningsdatum"
+      },
+      "preset": "date",
+      "required": false,
+      "group": "version"
+    },
+    {
+      "field_name": "changetype",
+      "harmonized_field_name": "changetype",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "The latest action taken on the dataset [DCAT recommended]",
+        "nl": "Laatste type bewerking van de dataset [DCAT aanbevolen]",
+        "sv": "Den senaste åtgärden som har gjorts på dataset"
+      },
+      "label": {
+        "en": "Changetype",
+        "nl": "Type verandering",
+        "sv": "Förändra"
+      },
+      "preset": "select",
+      "choices": [
+        {
+          "label": {
+            "en": "updated",
+            "nl": "bijgewerkt",
+            "sv": "uppdaterad"
+          },
+          "value": "updated"
+        },
+        {
+          "label": {
+            "en": "deleted",
+            "nl": "verwijderd",
+            "sv": "raderade"
+          },
+          "value": "deleted"
+        },
+        {
+          "label": {
+            "en": "created",
+            "nl": "aangemaakt",
+            "sv": "skapat"
+          },
+          "value": "created"
+        }
+      ],
+      "sorted_choices": false,
+      "required": false,
+      "group": "version"
+    },
+    {
+      "field_name": "date_planned",
+      "harmonized_field_name": "date_planned",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "The date and time upon which it is planned that the dataset becomes available [DCAT optional]",
+        "nl": " Datum waarop dataset beschikbaar komt [DCAT optioneel]",
+        "sv": "Datum och tidpunkt då det är planerat att datamängden blir tillgänglig"
+      },
+      "label": {
+        "en": "Date planned",
+        "nl": "Geplande datum",
+        "sv": "Datum planerat"
+      },
+      "preset": "date",
+      "required": false,
+      "group": "version"
+    },
+    {
+      "field_name": "update_frequency",
+      "harmonized_field_name": "update_frequency",
+      "harmonized_value_mapping": {
+        "Eenmalig": "nooit",
+        "eenmalig": "nooit",
+        "per kwartaal": "driemaandelijks",
+        "Per kwartaal": "driemaandelijks",
+        "http://publications.europa.eu/resource/authority/frequency/ANNUAL": "jaarlijks",
+        "http://publications.europa.eu/resource/authority/frequency/ANNUAL_2": "halfjaarlijks",
+        "http://publications.europa.eu/resource/authority/frequency/ANNUAL_3": "drie keer per jaar",
+        "http://publications.europa.eu/resource/authority/frequency/BIENNIAL": "tweejaarlijks",
+        "http://publications.europa.eu/resource/authority/frequency/BIMONTHLY": "tweemaandelijks",
+        "http://publications.europa.eu/resource/authority/frequency/BIWEEKLY": "veertiendaags",
+        "http://publications.europa.eu/resource/authority/frequency/CONT": "voortdurend",
+        "http://publications.europa.eu/resource/authority/frequency/DAILY": "dagelijks",
+        "http://publications.europa.eu/resource/authority/frequency/DAILY_2": "tweemaal per dag",
+        "http://publications.europa.eu/resource/authority/frequency/IRREG": "onregelmatig",
+        "http://publications.europa.eu/resource/authority/frequency/MONTHLY": "maandelijks",
+        "http://publications.europa.eu/resource/authority/frequency/MONTHLY_2": "twee keer per maand",
+        "http://publications.europa.eu/resource/authority/frequency/MONTHLY_3": "drie keer per maand",
+        "http://publications.europa.eu/resource/authority/frequency/NEVER": "nooit",
+        "http://publications.europa.eu/resource/authority/frequency/OTHER": "overige",
+        "http://publications.europa.eu/resource/authority/frequency/QUARTERLY": "driemaandelijks",
+        "http://publications.europa.eu/resource/authority/frequency/TRIENNIAL": "driejaarlijks",
+        "http://publications.europa.eu/resource/authority/frequency/UNKNOWN": "onbekend",
+        "http://publications.europa.eu/resource/authority/frequency/UPDATE_CONT": "voortdurend geactualiseerd",
+        "http://publications.europa.eu/resource/authority/frequency/WEEKLY": "wekelijks",
+        "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2": "twee keer per week",
+        "http://publications.europa.eu/resource/authority/frequency/WEEKLY_3": "drie keer per week"
+      },
+      "required": true,
+      "preset": "select",
+      "choices": [
+        {
+          "value": "voortdurend geactualiseerd",
+          "label": {
+            "en": "constantly updated",
+            "nl": "voortdurend geactualiseerd"
+          }
+        },
+        {
+          "value": "dagelijks",
+          "label": {
+            "en": "daily",
+            "nl": "dagelijks"
+          }
+        },
+        {
+          "value": "tweemaal per dag",
+          "label": {
+            "en": "twice a day",
+            "nl": "tweemaal per dag"
+          }
+        },
+        {
+          "value": "drie keer per week",
+          "label": {
+            "en": "three times a week",
+            "nl": "drie keer per week"
+          }
+        },
+        {
+          "value": "twee keer per week",
+          "label": {
+            "en": "two times a week",
+            "nl": "twee keer per week"
+          }
+        },
+        {
+          "value": "wekelijks",
+          "label": {
+            "en": "weekly",
+            "nl": "wekelijks"
+          }
+        },
+        {
+          "value": "veertiendaags",
+          "label": {
+            "en": "fourteen days",
+            "nl": "veertiendaags"
+          }
+        },
+        {
+          "value": "twee keer per maand",
+          "label": {
+            "en": "twice a month",
+            "nl": "twee keer per maand"
+          }
+        },
+        {
+          "value": "drie keer per maand",
+          "label": {
+            "en": "three times a month",
+            "nl": "drie keer per maand"
+          }
+        },
+        {
+          "value": "maandelijks",
+          "label": {
+            "en": "monthly",
+            "nl": "maandelijks"
+          }
+        },
+        {
+          "value": "tweemaandelijks",
+          "label": {
+            "en": "bimonthly",
+            "nl": "tweemaandelijks"
+          }
+        },
+        {
+          "value": "driemaandelijks",
+          "label": {
+            "en": "quarterly",
+            "nl": "driemaandelijks"
+          }
+        },
+        {
+          "value": "drie keer per jaar",
+          "label": {
+            "en": "three times a year",
+            "nl": "drie keer per jaar"
+          }
+        },
+        {
+          "value": "halfjaarlijks",
+          "label": {
+            "en": "half-yearly",
+            "nl": "halfjaarlijks"
+          }
+        },
+        {
+          "value": "jaarlijks",
+          "label": {
+            "en": "annually",
+            "nl": "jaarlijks"
+          }
+        },
+        {
+          "value": "tweejaarlijks",
+          "label": {
+            "en": "every two years",
+            "nl": "tweejaarlijks"
+          }
+        },
+        {
+          "value": "driejaarlijks",
+          "label": {
+            "en": "every three years",
+            "nl": "driejaarlijks"
+          }
+        },
+        {
+          "value": "onregelmatig",
+          "label": {
+            "en": "irregular",
+            "nl": "onregelmatig"
+          }
+        },
+        {
+          "value": "onbekend",
+          "label": {
+            "en": "unknown",
+            "nl": "onbekend"
+          }
+        },
+        {
+          "value": "nooit",
+          "label": {
+            "en": "never",
+            "nl": "nooit"
+          }
+        },
+        {
+          "value": "overig",
+          "label": {
+            "en": "remaining",
+            "nl": "overig"
+          }
+        }
+      ],
+      "label": {
+        "en": "Update frequency",
+        "nl": "Updatefrequentie"
+      },
+      "help_inline": true,
+      "help_text": {
+        "en": "How often is the data product updated. Click on the field (when empty) to choose an option from the list otherwise fill your own value. [DCAT recommended]",
+        "nl": "Hoe vaak wordt het dataproduct bijgewerkt? Klik op het veld (indien leeg) om een ​​optie uit de lijst te kiezen. [DCAT aanbevolen]"
+      },
+      "group": "version"
+    },
+    {
+      "field_name": "version",
+      "harmonized_field_name": "version",
+      "help_inline": true,
+      "help_text": {
+        "en": "The version of the dataset [DCAT optional]",
+        "nl": "Een versienummer of een andere versie-aanduiding voor de dataset. [DCAT optioneel]",
+        "sv": "Ett versionsnummer eller annan versionsbeteckning för datamängden."
+      },
+      "label": {
+        "en": "Version",
+        "nl": "Versie",
+        "sv": "Version"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "required": false,
+      "group": "version"
+    },
+    {
+      "field_name": "version_notes",
+      "harmonized_field_name": "version_notes",
+      "harmonized_value_mapping": {
+        "example1": "harmonized example1",
+        "example2": "harmonized example2"
+      },
+      "harmonized_default_value": "harmonized default example",
+      "help_inline": true,
+      "help_text": {
+        "en": "Version notes of the dataset [DCAT optional]",
+        "nl": "Bevat een beschrijving van de verschillen tussen deze versie en een eerdere versie van de dataset. [DCAT optioneel]",
+        "sv": "Innehåller en beskrivning av skillnaderna mellan denna version och en tidigare version av datamängden. Denna egenskap kan upprepas för parallella språkversioner av versionsanteckningar."
+      },
+      "label": {
+        "en": "Version notes",
+        "nl": "Versietoelichting",
+        "sv": "Versionsanteckningar"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "required": false,
+      "group": "version"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "language",
+      "harmonized_field_name": "language",
+      "harmonized_value_mapping": {
+        "http://publications.europa.eu/resource/authority/language/ENG": "http://publications.europa.eu/resource/authority/language/ENG",
+        "http://publications.europa.eu/resource/authority/language/FRY": "http://publications.europa.eu/resource/authority/language/FRY",
+        "http://publications.europa.eu/resource/authority/language/NLD": "http://publications.europa.eu/resource/authority/language/NLD",
+        "English": "http://publications.europa.eu/resource/authority/language/ENG",
+        "EN": "http://publications.europa.eu/resource/authority/language/ENG",
+        "Frisian": "http://publications.europa.eu/resource/authority/language/FRY",
+        "Dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "Nederland": "http://publications.europa.eu/resource/authority/language/NLD",
+        "nederlands": "http://publications.europa.eu/resource/authority/language/NLD",
+        "NL": "http://publications.europa.eu/resource/authority/language/NLD"
+      },
+      "harmonized_default_value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "The language used in the data [DCAT mandatory]",
+        "nl": "De taal van de data [DCAT verplicht]",
+        "sv": "Data Språk"
+      },
+      "label": {
+        "en": "Language",
+        "nl": "Taal",
+        "sv": "Språk"
+      },
+      "preset": "select",
+      "choices_helper": "civity_donl_language_list_choices",
+      "required": false
+    },
+    {
+      "field_name": "metadata_language",
+      "harmonized_field_name": "metadata_language",
+      "harmonized_value_mapping": {
+        "http://publications.europa.eu/resource/authority/language/ENG": "http://publications.europa.eu/resource/authority/language/ENG",
+        "http://publications.europa.eu/resource/authority/language/FRY": "http://publications.europa.eu/resource/authority/language/FRY",
+        "http://publications.europa.eu/resource/authority/language/NLD": "http://publications.europa.eu/resource/authority/language/NLD",
+        "English": "http://publications.europa.eu/resource/authority/language/ENG",
+        "EN": "http://publications.europa.eu/resource/authority/language/ENG",
+        "Frisian": "http://publications.europa.eu/resource/authority/language/FRY",
+        "Dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "dutch": "http://publications.europa.eu/resource/authority/language/NLD",
+        "Nederland": "http://publications.europa.eu/resource/authority/language/NLD",
+        "nederlands": "http://publications.europa.eu/resource/authority/language/NLD",
+        "NL": "http://publications.europa.eu/resource/authority/language/NLD"
+      },
+      "harmonized_default_value": "http://publications.europa.eu/resource/authority/language/NLD",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "The language used in the metadata of the dataset [DCAT mandatory]",
+        "nl": "De taal van de metadata [DCAT verplicht]",
+        "sv": "Metadata Språk"
+      },
+      "label": {
+        "en": "Metadata language",
+        "nl": "Taal van de metadata",
+        "sv": "Metadata Språk"
+      },
+      "preset": "select",
+      "choices_helper": "civity_donl_language_list_choices",
+      "required": false
+    },
+    {
+      "field_name": "resource_status",
+      "harmonized_field_name": "resource_status",
+      "help_inline": true,
+      "help_text": {
+        "en": "State of the resource, it describes the availability of the resource [DCAT recommended]",
+        "nl": "Status van de bron [DCAT aanbevolen]"
+      },
+      "label": {
+        "en": "Status",
+        "nl": "Status",
+        "sv": "Status"
+      },
+      "preset": "select",
+      "choices": [
+        {
+          "label": {
+            "en": "completed",
+            "nl": "afgerond",
+            "sv": "avslutad"
+          },
+          "value": "http://purl.org/adms/status/Completed"
+        },
+        {
+          "label": {
+            "en": "deprecated",
+            "nl": "verouderd",
+            "sv": "utfasad"
+          },
+          "value": "http://purl.org/adms/status/Deprecated"
+        },
+        {
+          "label": {
+            "en": "under development",
+            "nl": "in ontwikkeling",
+            "sv": "under utveckling"
+          },
+          "value": "http://purl.org/adms/status/UnderDevelopment"
+        },
+        {
+          "label": {
+            "en": "withdrawn",
+            "nl": "teruggetrokken",
+            "sv": "dragits tillbaka"
+          },
+          "value": "http://purl.org/adms/status/Withdrawn"
+        }
+      ],
+      "required": false
+    },
+    {
+      "field_name": "linked_schemas",
+      "harmonized_field_name": "linked_schemas",
+      "help_inline": true,
+      "help_text": {
+        "en": "Standards the resource applies to. [DCAT recommended]",
+        "nl": "Standaarden waarop de bron van toepassing is. [DCAT aanbevolen]",
+        "sv": "Standarder som resursen gäller."
+      },
+      "label": {
+        "en": "Linked Schemas",
+        "nl": "Gekoppelde schema's",
+        "sv": "Länkade scheman"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "link.html",
+      "required": false
+    },
+    {
+      "field_name": "download_url",
+      "harmonized_field_name": "download_url",
+      "help_inline": true,
+      "help_text": {
+        "en": "Link referring to a downloadable variant of the resource. [DCAT recommended]",
+        "nl": "Link die verwijst naar een downloadbare variant van de bron. [DCAT aanbevolen]",
+        "sv": "Länk som hänvisar till en nedladdningsbar variant av resursen."
+      },
+      "label": {
+        "en": "Download URL",
+        "nl": "Download URL",
+        "sv": "Ladda ner URL"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "link.html",
+      "required": false
+    },
+    {
+      "field_name": "rights",
+      "harmonized_field_name": "rights",
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "label": {
+        "en": "Rights",
+        "nl": "Rechten",
+        "sv": "Rights"
+      },
+      "help_inline": true,
+      "help_text": {
+        "en": "Rights that apply to the resource. [DCAT recommended]",
+        "nl": "Rechten die van toepassing zijn op de bron. [DCAT aanbevolen]",
+        "sv": "Rättigheter som gäller resursen."
+      },
+      "required": false
+    }
+  ]
+}

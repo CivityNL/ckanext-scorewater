@@ -1,0 +1,173 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "all",
+  "about": "Dataset",
+  "about_url": "dataset",
+  "dataset_fields": [
+    {
+      "field_name": "title",
+      "harmonized_field_name": "title",
+      "display_snippet": "text.html",
+      "form_snippet": "text.html",
+      "help_inline": true,
+      "help_text": {
+        "en": "The title of the dataset [ckan]",
+        "nl": "De titel van de dataset [ckan]",
+        "sv": "Datamängdens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
+      },
+      "label": {
+        "en": "Title",
+        "nl": "Titel",
+        "sv": "Titel"
+      },
+      "preset": "title",
+      "required": true,
+      "group": "basic_info"
+    },
+    {
+      "field_name": "name",
+      "harmonized_field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "",
+      "group": "basic_info"
+    },
+    {
+      "field_name": "notes",
+      "harmonized_field_name": "notes",
+      "harmonized_default_value": "No description",
+      "form_snippet": "markdown.html",
+      "help_inline": true,
+      "help_text": {
+        "en": "The description of the dataset [ckan]",
+        "nl": "Beschrijving van de dataset [ckan]",
+        "sv": "Datamängdens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
+      },
+      "label": {
+        "en": "Description",
+        "nl": "Omschrijving",
+        "sv": "Beskrivning"
+      },
+      "required": true,
+      "group": "basic_info"
+    },
+    {
+      "field_name": "owner_org",
+      "harmonized_field_name": "owner_org",
+      "preset": "dataset_organization",
+      "label": {
+        "en": "Organization",
+        "nl": "Organisatie",
+        "sv": "Organisation"
+      },
+      "help_inline": true,
+      "help_text": {
+        "en": "Name of the organisation [ckan]",
+        "nl": "Naam van de organisatie [ckan]",
+        "sv": "Organisationens namn [ckan]"
+      },
+      "required": true,
+      "sorted_choices": true,
+      "group": "basic_info"
+    },
+    {
+      "field_name": "license_id",
+      "harmonized_field_name": "license_id",
+      "harmonized_default_value": "http://www.opendefinition.org/licenses/cc-zero",
+      "label": {
+        "en": "License",
+        "nl": "Licentie",
+        "sv": "Licens"
+      },
+      "form_snippet": "license.html",
+      "help_inline": true,
+      "help_text": {
+        "en": "The license that applies to the dataset [ckan]",
+        "nl": "De licentie die van toepassing is op de dataset [ckan]",
+        "sv": "I Sverige kräver vi licensen CC0-1.0 (Public domain) på katalogen, dvs man ska använda URI:n http://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "required": true,
+      "group": "basic_info"
+    },
+    {
+      "field_name": "tag_string",
+      "harmonized_field_name": "tags",
+      "help_inline": true,
+      "help_text": {
+        "en": "Keywords to describe the dataset [ckan]",
+        "nl": "Trefwoorden om de dataset mee te beschrijven [ckan]",
+        "sv": "Egenskapen innehåller ett nyckelord som beskriver datamängden"
+      },
+      "label": {
+        "en": "Tags",
+        "nl": "Trefwoorden",
+        "sv": "Nyckelord"
+      },
+      "preset": "tag_string_autocomplete_required",
+      "required": true,
+      "group": "basic_info"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "harmonized_field_name": "url",
+      "label": {
+        "en": "File",
+        "nl": "Toegangs-URL",
+        "sv": "Fil"
+      },
+      "form_placeholder": {
+        "en": "FILE or URL",
+        "nl": "Databron toevoegen",
+        "sv": "Lägg till datakälla"
+      },
+      "preset": "resource_url_upload",
+      "required": true
+    },
+    {
+      "field_name": "name",
+      "harmonized_field_name": "name",
+      "label": {
+        "en": "Title",
+        "nl": "Titel",
+        "sv": "Titel"
+      },
+      "required": true
+    },
+    {
+      "field_name": "description",
+      "harmonized_field_name": "description",
+      "harmonized_default_value": "No description",
+      "label": {
+        "en": "Description",
+        "nl": "Omschrijving",
+        "sv": "Beskrivning"
+      },
+      "form_snippet": "markdown.html",
+      "required": true
+    },
+    {
+      "field_name": "format",
+      "harmonized_field_name": "format",
+      "label": {
+        "en": "Format",
+        "nl": "Formaat"
+      },
+      "preset": "resource_format_autocomplete",
+      "required": true
+    },
+    {
+      "field_name": "hash",
+      "validators": "ignore_missing_but_keep_value",
+      "form_snippet": null,
+      "display_snippet": null
+    },
+    {
+      "field_name": "size",
+      "validators": "ignore_missing_but_keep_value",
+      "form_snippet": null,
+      "display_snippet": null
+    }
+  ]
+}

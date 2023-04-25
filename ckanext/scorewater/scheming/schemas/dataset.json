@@ -1,0 +1,11 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "dataset",
+  "about": "Dataset",
+  "about_url": "dataset",
+  "dataset_fields": [
+    {"field_name": "publisher", "display_snippet":null},
+    {"field_name": "authority", "display_snippet":null}
+  ],
+  "resource_fields": []
+}

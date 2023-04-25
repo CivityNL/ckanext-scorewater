@@ -1,0 +1,205 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "service",
+  "about": "Service",
+  "about_url": "",
+  "dataset_fields": [
+    {
+      "display_snippet": "text.html",
+      "field_name": "title",
+      "form_snippet": "text.html",
+      "help_inline": true,
+      "help_text": {
+        "en": "The title of the factsheet",
+        "nl": "De titel van de factsheet",
+        "sv": "Datamängdens namn. Denna egenskap kan upprepas för parallella språkversioner av namnet."
+      },
+      "label": {
+        "en": "Title",
+        "nl": "Titel",
+        "sv": "Titel"
+      },
+      "preset": "title",
+      "required": true
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": ""
+    },
+    {
+      "field_name": "notes",
+      "form_snippet": "markdown.html",
+      "help_inline": true,
+      "help_text": {
+        "en": "The description of the factsheet",
+        "nl": "Beschrijving van de factsheet",
+        "sv": "Datamängdens beskrivning. Denna egenskap kan upprepas för parallella språkversioner av beskrivningen."
+      },
+      "label": {
+        "en": "Description",
+        "nl": "Omschrijving",
+        "sv": "Beskrivning"
+      },
+      "required": true
+    },
+    {
+      "field_name": "owner_org",
+      "preset": "dataset_organization",
+      "label": {
+        "en": "Organization",
+        "nl": "Organisatie",
+        "sv": "NA"
+      },
+      "required": true,
+      "sorted_choices": true
+    },
+    {
+      "field_name": "contact_point_name",
+      "form_placeholder": "",
+      "help_inline": true,
+      "help_text": {
+        "en": "Name of the contact point",
+        "nl": "Naam van contactpersoon",
+        "sv": "En text som motsvarar namnet på kontaktuppgiften."
+      },
+      "label": {
+        "en": "Contact point name",
+        "nl": "Naam contactpunt",
+        "sv": "Namn kontaktpunkt"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "text.html",
+      "required": true
+    },
+    {
+      "field_name": "contact_point_email",
+      "form_placeholder": "naam@email.nl",
+      "help_inline": true,
+      "help_text": {
+        "en": "Email of the contact point",
+        "nl": "E-mailadres van contactpersoon",
+        "sv": "En mailadress som används av en person eller en funktionsadress inom en organisation."
+      },
+      "label": {
+        "en": "Contact point email",
+        "nl": "E-mail contactpunt",
+        "sv": "E-postadress kontaktpunkt"
+      },
+      "form_snippet": "text.html",
+      "display_snippet": "email.html",
+      "required": true
+    },
+    {"field_name": "license_id", "classes": ["hidden"]},
+    {"field_name": "language", "classes": ["hidden"]},
+    {"field_name": "metadata_language", "classes": ["hidden"]},
+    {"field_name": "theme", "classes": ["hidden"]},
+    {"field_name": "subtheme", "classes": ["hidden"]},
+    {"field_name": "publisher", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "authority", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "contact_point_type", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "contact_point_phone", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "spatial_scheme", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "spatial_value", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "temporal_end", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "access_rights", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "dataset_status", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "issued", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "changetype", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "date_planned", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "update_frequency", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "version", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "version_notes", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "geoserver_link_enabled", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "geo_ref_system", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "bounding_box", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "resolution", "classes": ["hidden"], "display_snippet":null},
+    {"field_name": "denominator", "classes": ["hidden"], "display_snippet":null}
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": {
+        "en": "File",
+        "nl": "Toegangs-URL",
+        "sv": "NA"
+      },
+      "form_placeholder": {
+        "en": "FILE or URL",
+        "nl": "Databron toevoegen",
+        "sv": "NA"
+      },
+      "preset": "resource_url_upload",
+      "required": true
+    },
+    {
+      "field_name": "name",
+      "label": {
+        "en": "Title",
+        "nl": "Titel",
+        "sv": "NA"
+      },
+      "required": true
+    },
+    {
+      "field_name": "description",
+      "label": {
+        "en": "Description",
+        "nl": "Omschrijving",
+        "sv": "NA"
+      },
+      "form_snippet": "markdown.html",
+      "required": true
+    },
+    {
+      "field_name": "format",
+      "label": {
+        "en": "Format",
+        "nl": "Formaat"
+      },
+      "preset": "resource_format_autocomplete",
+      "required": true
+    },
+    {
+      "field_name": "language",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "metadata_language",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "resource_status",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "linkedSchemas",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "downloadURL",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "rights",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "layer_srid",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    },
+    {
+      "field_name": "layer_extent",
+      "required": false,
+      "classes": ["hidden"], "display_snippet":null
+    }
+  ]
+}

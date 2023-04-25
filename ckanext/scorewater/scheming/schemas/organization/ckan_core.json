@@ -1,0 +1,42 @@
+{
+  "scheming_version": 1,
+  "organization_type": "organization",
+  "about_url": "http://github.com/ckan/ckanext-scheming",
+  "fields": [
+    {
+      "field_name": "title",
+      "label": "Name",
+      "validators": "ignore_missing unicode",
+      "form_snippet": "large_text.html",
+      "form_attrs": {
+        "data-module": "slug-preview-target"
+      },
+      "form_placeholder": {
+        "en": "My organization",
+        "nl": "Mijn Organisatie"
+      }
+    },
+    {
+      "field_name": "name",
+      "label": "URL",
+      "validators": "not_empty unicode name_validator group_name_validator",
+      "form_snippet": "slug.html",
+      "form_placeholder": "my-theme"
+    },
+    {
+      "field_name": "notes",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": {
+        "en": "A little information about my organization...",
+        "nl": "Informatie over mijn organisatie..."
+      }
+    },
+    {
+      "field_name": "url",
+      "preset": "organization_url_upload",
+      "label": "Image URL",
+      "form_placeholder": "http://example.com/my-image.jpg"
+    }
+  ]
+}

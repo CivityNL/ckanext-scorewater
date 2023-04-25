@@ -1,0 +1,42 @@
+[
+  {
+    "dataset_type": "supplier",
+    "about": "Supplier",
+    "about_url": "https://dataplatform.nl/what-is-a-supplier",
+    "schemas": [
+      "ckanext.scorewater:scheming/schemas/ckan_core.json",
+      "ckanext.scorewater:scheming/schemas/supplier.json"
+    ],
+    "fa_icon": "truck"
+  },
+  {
+    "dataset_type": "sensor",
+    "about": "Sensor",
+    "about_url": "https://dataplatform.nl/what-is-a-sensor",
+    "schemas": [
+      "ckanext.scorewater:scheming/schemas/ckan_core.json",
+      "ckanext.scorewater:scheming/schemas/sensor.json"
+    ],
+    "fa_icon": "wifi"
+  },
+  {
+    "dataset_type": "service",
+    "about": "Service",
+    "about_url": "https://dataplatform.nl/what-is-a-service",
+    "schemas": [
+      "ckanext.scorewater:scheming/schemas/ckan_core.json",
+      "ckanext.scorewater:scheming/schemas/service.json"
+    ],
+    "fa_icon": "industry"
+  },
+  {
+    "dataset_type": "dataset",
+    "about": "Dataset",
+    "about_url": "https://dataplatform.nl/what-is-a-dataset",
+    "schemas": [
+      "ckanext.scorewater:scheming/schemas/ckan_core.json",
+      "ckanext.scorewater:scheming/schemas/dataset.json"
+    ],
+    "fa_icon": "file-text-o"
+  }
+]
