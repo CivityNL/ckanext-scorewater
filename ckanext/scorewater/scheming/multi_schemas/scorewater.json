@@ -30,6 +30,16 @@
     "fa_icon": "industry"
   },
   {
+    "dataset_type": "source",
+    "about": "Source",
+    "about_url": "https://dataplatform.nl/what-is-a-source",
+    "schemas": [
+      "ckanext.scorewater:scheming/schemas/ckan_core.json",
+      "ckanext.scorewater:scheming/schemas/source.json"
+    ],
+    "fa_icon": "book-open"
+  },
+  {
     "dataset_type": "dataset",
     "about": "Dataset",
     "about_url": "https://dataplatform.nl/what-is-a-dataset",
