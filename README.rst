@@ -81,7 +81,7 @@ Enable all scorewater schemas in the configuration options, to get a dropdown me
    scheming.dataset_multi_schemas = ckanext.scorewater:scheming/multi_schemas/ckan-scorewater.json
 
 
-.. image:: /images/multi_schema_ckan_dropdown.png
+.. image:: /images/multi_schema_dropdown.png
 
 ------------------
 SCOREwater schemas
